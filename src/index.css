@@ -1,0 +1,32 @@
+
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..700&display=swap');
+*{
+  font-family: "Manrope", sans-serif;
+
+}
+/* for flowbite */
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import "flowbite/src/themes/enterprise";
+
+@theme{
+  --color-primary : #5044E5;
+}
+
+@plugin "flowbite/plugin";
+@source "../node_modules/flowbite";
+
+
+
+/* For Chrome, Edge, Safari */
+::-webkit-scrollbar {
+  width: 8px;   /* 👈 change this */
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(223, 199, 216);
+  border-radius: 10px;
+}
